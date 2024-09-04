@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import axios from "axios";
 import ProductsMapping from "../components/ProductsMapping";
 import { useNavigate } from "react-router-dom";
+import blackFriday from "../assets/black_friday.jpg";
 
 const Home = () => {
   const [homeProducts, setHomeProducts] = useState([]);
@@ -52,10 +53,10 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="flex flex-col items-center justify-start min-h-screen w-full bg-gray-100">
+      <div className="flex flex-col items-center justify-start min-h-screen w-full bg-gray-100 pb-5">
         <div className="flex flex-row items-center justify-center w-full max-w-6xl relative">
           <input
-            className="w-3/5 mt-5 bg-gray-400 text-gray-50 text-lg font-semibold h-10 rounded-3xl px-5 placeholder:text-gray-300 focus:outline-gray-600"
+            className="w-3/5 mt-2 bg-gray-400 text-gray-50 text-lg font-semibold h-10 rounded-3xl px-5 placeholder:text-gray-300 focus:outline-gray-600"
             type="text"
             placeholder="Search Products, Categories etc."
             onChange={(e) => {
@@ -68,10 +69,17 @@ const Home = () => {
             }}
           />
           <img
-            className="w-7 mt-5 absolute right-60 mr-1 active:scale-90 cursor-pointer"
+            className="w-7 mt-2 absolute right-60 mr-1 active:scale-90 cursor-pointer"
             src="https://img.icons8.com/ios-filled/50/EBEBEB/search--v1.png"
             alt="search--v1"
             onClick={handleSearch}
+          />
+        </div>
+        <div className="w-full h-1/5 mt-4">
+          <img
+            src={blackFriday}
+            alt="Effortless Shopping"
+            className="w-full h-full object-cover"
           />
         </div>
         <div className="flex flex-row items-center justify-between w-full my-2">
