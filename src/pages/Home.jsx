@@ -38,7 +38,7 @@ const Home = () => {
       const j = Math.floor(Math.random() * (i + 1));
       [homeProducts[i], homeProducts[j]] = [homeProducts[j], homeProducts[i]];
     }
-    setSlicedArray(homeProducts.slice(0, 8));
+    setSlicedArray(homeProducts.slice(0, 16));
     console.log(slicedArray);
   };
 

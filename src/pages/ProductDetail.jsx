@@ -73,7 +73,7 @@ const ProductDetail = () => {
                   {detail.description}
                 </p>
                 <h1 className="text-2xl md:text-3xl font-semibold text-blue-700 mb-7 pl-2">
-                  ${detail.price} USD
+                  ${parseInt(detail.price) * noOfItems} USD
                 </h1>
                 <div className="flex flex-row items-center">
                   <button
