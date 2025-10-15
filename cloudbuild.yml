@@ -49,7 +49,6 @@ images:
 
 # Build configuration
 options:
-  machineType: 'N1_HIGHCPU_8'
   logging: CLOUD_LOGGING_ONLY
 
 # Timeout for the build (default is 10 minutes)
